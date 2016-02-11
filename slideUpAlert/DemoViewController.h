@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DemoViewController.h
 //  slideUpAlert
 //
 //  Created by Stephen R Printup on 2/11/16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DemoViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *ViewSavedToHealthKit;
 
 @end
-

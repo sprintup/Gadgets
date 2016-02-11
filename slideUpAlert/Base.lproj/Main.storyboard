@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Demo View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DemoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZt-2r-FRg">
+                                <rect key="frame" x="140" y="269" width="41" height="30"/>
+                                <state key="normal" title="Demo"/>
+                                <connections>
+                                    <action selector="buttonDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpc-o6-yVe"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUO-EM-ixV">
+                                <rect key="frame" x="0.0" y="568" width="320" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved To Health Kit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sty-d3-zZW">
+                                        <rect key="frame" x="85" y="27" width="150" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.34901960780000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="BGU-ml-vhe"/>
+                                    <constraint firstItem="sty-d3-zZW" firstAttribute="centerY" secondItem="UUO-EM-ixV" secondAttribute="centerY" id="dQ5-1K-lfq"/>
+                                    <constraint firstItem="sty-d3-zZW" firstAttribute="centerX" secondItem="UUO-EM-ixV" secondAttribute="centerX" id="ubL-0N-Gzm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UUO-EM-ixV" secondAttribute="trailing" id="6ev-MX-YvQ"/>
+                            <constraint firstItem="KZt-2r-FRg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7j9-Vh-eDs"/>
+                            <constraint firstItem="KZt-2r-FRg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dle-GV-if1"/>
+                            <constraint firstItem="UUO-EM-ixV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f2A-wA-LjK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UUO-EM-ixV" secondAttribute="bottom" constant="-75" id="kg4-XH-xoq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ViewSavedToHealthKit" destination="UUO-EM-ixV" id="BLh-fu-DNM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="472" y="622"/>
         </scene>
     </scenes>
 </document>

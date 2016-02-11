@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		F3DFA5101C6D378E006B859D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DFA50F1C6D378E006B859D /* main.m */; };
 		F3DFA5131C6D378E006B859D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DFA5121C6D378E006B859D /* AppDelegate.m */; };
-		F3DFA5161C6D378E006B859D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DFA5151C6D378E006B859D /* ViewController.m */; };
 		F3DFA5191C6D378E006B859D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DFA5171C6D378E006B859D /* Main.storyboard */; };
 		F3DFA51B1C6D378E006B859D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3DFA51A1C6D378E006B859D /* Assets.xcassets */; };
 		F3DFA51E1C6D378E006B859D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DFA51C1C6D378E006B859D /* LaunchScreen.storyboard */; };
 		F3DFA5291C6D378E006B859D /* slideUpAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DFA5281C6D378E006B859D /* slideUpAlertTests.m */; };
 		F3DFA5341C6D378E006B859D /* slideUpAlertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DFA5331C6D378E006B859D /* slideUpAlertUITests.m */; };
+		F3DFA5431C6D3912006B859D /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DFA5421C6D3912006B859D /* DemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		F3DFA50F1C6D378E006B859D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3DFA5111C6D378E006B859D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3DFA5121C6D378E006B859D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F3DFA5141C6D378E006B859D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F3DFA5151C6D378E006B859D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F3DFA5181C6D378E006B859D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3DFA51A1C6D378E006B859D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3DFA51D1C6D378E006B859D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		F3DFA52F1C6D378E006B859D /* slideUpAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slideUpAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DFA5331C6D378E006B859D /* slideUpAlertUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = slideUpAlertUITests.m; sourceTree = "<group>"; };
 		F3DFA5351C6D378E006B859D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3DFA5411C6D3912006B859D /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		F3DFA5421C6D3912006B859D /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 			children = (
 				F3DFA5111C6D378E006B859D /* AppDelegate.h */,
 				F3DFA5121C6D378E006B859D /* AppDelegate.m */,
-				F3DFA5141C6D378E006B859D /* ViewController.h */,
-				F3DFA5151C6D378E006B859D /* ViewController.m */,
+				F3DFA5411C6D3912006B859D /* DemoViewController.h */,
+				F3DFA5421C6D3912006B859D /* DemoViewController.m */,
 				F3DFA5171C6D378E006B859D /* Main.storyboard */,
 				F3DFA51A1C6D378E006B859D /* Assets.xcassets */,
 				F3DFA51C1C6D378E006B859D /* LaunchScreen.storyboard */,
@@ -270,9 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3DFA5161C6D378E006B859D /* ViewController.m in Sources */,
 				F3DFA5131C6D378E006B859D /* AppDelegate.m in Sources */,
 				F3DFA5101C6D378E006B859D /* main.m in Sources */,
+				F3DFA5431C6D3912006B859D /* DemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +496,7 @@
 				F3DFA53A1C6D378E006B859D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3DFA53B1C6D378E006B859D /* Build configuration list for PBXNativeTarget "slideUpAlertTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +505,7 @@
 				F3DFA53D1C6D378E006B859D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3DFA53E1C6D378E006B859D /* Build configuration list for PBXNativeTarget "slideUpAlertUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +514,7 @@
 				F3DFA5401C6D378E006B859D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
